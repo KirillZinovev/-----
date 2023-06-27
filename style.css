@@ -1,0 +1,67 @@
+* {
+  margin: 5px;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui;
+  /* color: rgb(73, 73, 73); */
+  
+  min-height: 100vh;
+  margin: 30px;
+  background: rgb(215,189,73);
+background: radial-gradient(circle, rgba(215,189,73,1) 0%, rgba(191,148,233,1) 100%);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 400px;
+}
+h1 {
+  text-align: center;
+  width: 1000px;
+}
+input {
+  display: inline-block;
+  width: 400px;
+  height: 20px;
+  margin: 20px;
+}
+.prazdnik {
+  width: 100%;
+  text-align: center;
+}
+.pole {
+  background-color: rgba(0, 0, 0, 0.048);
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.7);
+  height: 450px;
+  border-radius: 10px;
+  /* width: 50%; */
+  /* margin-left: 25%; */
+}
+label,
+input,
+.btn,
+h4,
+h1 {
+  background-color: rgb(168, 132, 175);
+  box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.7);
+  border-radius: 10px;
+  padding: 15px;
+  margin: 25px;
+}
+
+table {
+  /* border-collapse: collapse; */
+  background: lightblue;
+  color: black;
+  /* align-items: center; */
+  border-radius: 10px;
+}
+th,
+td {
+  font-weight: bold;
+  padding: 20px;
+}
