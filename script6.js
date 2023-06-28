@@ -272,7 +272,7 @@ function huk(arr) {
       .getElementById("ma")
       .insertAdjacentHTML(
         "beforeend",
-        '<div class="card g" style="width: 18rem;"><div class="card-body"><p class="card-text">праздников нету!</p> </div></div> </br>'
+        '<div class="card g" style="width: 20rem;"><div class="card-body"><p class="card-text">   ------ПРАЗДНИКОВ НЕТ------</p> </div></div> </br>'
       );
   }
 }
