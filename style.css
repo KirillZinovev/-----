@@ -64,6 +64,11 @@ input::placeholder {
 input, select, textarea{
   color: rgb(255, 255, 255);
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 table {
   /* border-collapse: collapse; */
   background: rgb(230, 220, 173);

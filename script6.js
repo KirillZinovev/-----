@@ -252,7 +252,7 @@ function getZI(hp) {
               hp[i].name +
               '</p> <button class="btn btn-light" onclick="urlishe(\'' +
               hp[i].name +
-              "')\" >Ссылка!</button></div></div> </br>"
+              "')\" >Подробнее!</button></div></div> </br>"
           );
       }
     }
@@ -272,7 +272,8 @@ function huk(arr) {
       .getElementById("ma")
       .insertAdjacentHTML(
         "beforeend",
-        '<div class="card g" style="width: 20rem;"><div class="card-body"><p class="card-text">   ------ПРАЗДНИКОВ НЕТ------</p> </div></div> </br>'
+        '<div class="card g" style="width: 20rem;"><div class="card-body"><p class="card-text">------ПРАЗДНИКОВ НЕТ------</p> </div></div> </br>'
       );
   }
 }
+

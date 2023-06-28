@@ -33,6 +33,7 @@
         value=""
         id="strana"
         placeholder="RU"
+        onfocus="this.value=''"
       />
       <datalist id="count"></datalist>
       <input
@@ -42,6 +43,7 @@
         value=""
         id="monts"
         placeholder="Январь"
+        onfocus="this.value=''"
       />
       <datalist id="mont">
         <option value="January">Январь</option>
@@ -59,11 +61,12 @@
       </datalist>
       <input
         list="yea"
-        type="text"
+        type="number"
         name="input"
         value=""
         id="go"
         placeholder="2023"
+        onfocus="this.value=''"
       />
       <datalist id="yea"> </datalist>
       <button
