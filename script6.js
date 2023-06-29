@@ -1,27 +1,27 @@
-function ZI() {
+function ZI() {  // Функция для заполнения выпадающего списка с годами
   try {
-  for (let i = 1923; i < 2026; i++) {
-    let option = document.createElement("option");
-    option.value = i;
-    document.getElementById("yea").appendChild(option);
+  for (let i = 1923; i < 2026; i++) {    // Цикл для перебора годов с 1923 по 2025
+    let option = document.createElement("option"); // Создание нового элемента option
+    option.value = i;   // Установка значения option равным текущему году
+    document.getElementById("yea").appendChild(option);    // Добавление option в элемент с id "yea"
   }
   }catch (err) {
     alert(404);
     console.log(err);
   }
 }
-function ssilka(key, i) {
-  window.open("https://www.calend.ru/holidays/" + key + "-" + i + "/");
+function ssilka(key, i) {  // Функция для открытия ссылки в новой вкладке
+  window.open("https://www.calend.ru/holidays/" + key + "-" + i + "/");   // Открытие новой вкладки с URL, состоящим из значения key и i
 }
-function GO() {
+function GO() { // Функция для заполнения календаря
   try {
-  let yea = document.getElementById("go").value;
-  let mont = document.getElementById("monts").value;
-  let co = mont + " 1, " + yea + " 10:10:10";
-  let date = new Date(String(co));
-  let weekday = date.getDay();
-  let key;
-  switch (mont) {
+  let yea = document.getElementById("go").value; // Получение выбранного года
+  let mont = document.getElementById("monts").value; // Получение выбранного месяца
+  let co = mont + " 1, " + yea + " 10:10:10"; // Создание строки с датой и временем
+  let date = new Date(String(co)); // Создание объекта Date с указанной датой и временем
+  let weekday = date.getDay(); // Получение номера дня недели
+  let key; //Переменная для хранения ключа месяца
+  switch (mont) {    // Определение ключа месяца
     case "January":
       key = 1;
       break;
@@ -61,10 +61,10 @@ function GO() {
     default:
       break;
   }
-  for (let i = 1; i < 43; i++) {
+  for (let i = 1; i < 43; i++) { // Очистка содержимого ячеек календаря
     document.getElementById("t" + i).replaceChildren();
   }
-  if (weekday === 0) {
+  if (weekday === 0) {  // Заполнение календаря
     document
       .getElementById("t7")
       .insertAdjacentHTML(
@@ -148,7 +148,7 @@ function GO() {
     console.log(err);
   }
 }
-async function ZIZI() {
+async function ZIZI() { // Функция для заполнения выпадающего списка с кодами стран
   try {
     const resp = await fetch(`https://date.nager.at/api/v3/AvailableCountries`);
     const years = await resp.json();
@@ -158,7 +158,7 @@ async function ZIZI() {
     console.log(err);
   }
 }
-function ZIZIin(asus) {
+function ZIZIin(asus) { // Функция для добавления кодов стран в выпадающий список
   try {
     for (let i = 0; i < asus.length; i++) {
       let sony = asus[i].countryCode;
@@ -174,7 +174,7 @@ function ZIZIin(asus) {
     console.log(err);
   }
 }
-async function ziData() {
+async function ziData() { // Функция для получения данных о праздниках
   try {
     const god = document.getElementById("go").value;
     const strana_cod = document.getElementById("strana").value;
@@ -188,7 +188,7 @@ async function ziData() {
     console.log(err);
   }
 }
-function getZI(hp) {
+function getZI(hp) { // Функция для отображения данных о праздниках
   try {
     const month = document.getElementById("monts").value;
     let key;
